@@ -1,0 +1,30 @@
+{
+  "name": "shortcutter",
+  "version": "1.0.0",
+  "description": "Виртуальная клавиатура",
+  "main": "main.js",
+  "dependencies": {
+    "current-processes": "^0.2.1",
+    "electron-hotkey": "^0.0.1-alpha.1",
+    "electron": "^11.2.0",
+    "electron-packager": "^15.2.0",
+    "gkm": "^0.2.0",
+    "node-abi": "^2.19.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chehmakin/shortcutter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chehmakin/shortcutter/issues"
+  },
+  "homepage": "https://github.com/chehmakin/shortcutter#readme"
+}
