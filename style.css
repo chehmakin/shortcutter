@@ -11,19 +11,21 @@
         opacity: 1 !important;
         user-select: none;
         font-family: 'PT_Regular';
-    }
+        font-style: normal;
+font-weight: normal;
+}
 
 
     
     #main {
         width: 1090px;
         height: 412px;
-        background-color: #c7c7c7cc;
+        background-color: #555555;
         border-radius: 10px !important;
         /* filter: blur(0.3px);  */
-        backdrop-filter: blur(5px) !important;
+        backdrop-filter: blur(30px) !important;
         padding: 6px 4px;
-        opacity: 0.3;
+        opacity: 0.5;
     }
     
     .line::after {
@@ -92,6 +94,11 @@
 
     .del .r{
         margin-left: 77px;
+        font-size: 16px;
+    }
+
+    .esc .r{
+        font-size: 16px;
     }
     
     .sec_line .keys {
@@ -110,7 +117,9 @@
         position: static;
         width: 72px;
         height: 22px;
-        margin-left: 63px;
+        margin-left: 60.5px;
+        font-size: 16px;
+
         margin-top: 44px;
     }
     
@@ -146,14 +155,16 @@
     
     .sec_line .shift {
         width: 178px;
+        padding: 5px;
+        position: relative;
     }
     
     .sec_line .shift .r,
     .sec_line .alt .r,
     .sec_line .ctrl .r {
-        margin-top: 41px;
-        margin-left: 5px;
-        background: #FF9500;
+        margin-top: 36px;
+        margin-left: 0px;
+        background: #ED4E2D;
         width: 42px;
         height: 24px;
         left: 5px;
@@ -163,10 +174,15 @@
         color: #000;
         border-radius: 3px;
     }
-    
+
+
+
+
     .sec_line .alt .r {
         background: #FF2D55;
         width: 34px;
+        margin-left: 5px;
+        margin-top: 37px !important;
     }
     
     .sec_line .ctrl .r {
@@ -195,12 +211,13 @@
     .alt_gr .r{
         width: 48px !important;
         background: #0ACF84 !important;
-
+        margin-left: 5px;
+        margin-top: 41px !important;
     }
     
     .sec_line .shift_l .r {
-        margin-left: 135px;
-        margin-top: 44px;
+        margin-left: 130px;
+        margin-top: 39px;
         width: 32px;
         height: 22px;
         line-height: 22px;
@@ -224,10 +241,12 @@
     .sec_line .fn .r,
     .sec_line .win .r {
         margin-top: 41px;
+        margin-left: 10px;
     }
     
     .sec_line .ctrl .r {
         margin-top: 36px;
+        margin-left: 5px;
     }
 
     .container{
@@ -259,5 +278,13 @@
     .up svg, .down svg{
         opacity: 0.2 !important;
         margin-left: 32px;
-        margin-top: 14px;
+        margin-top: 12px;
     }
+
+    .right svg{
+        margin-left: 34.1px;
+    }
+
+    .down svg{
+        margin-top: 14px;
+}

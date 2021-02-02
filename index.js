@@ -30,14 +30,14 @@ function isRunning(win, mac){
     })
 }
 
-// isRunning('Calculator.exe').then((a) => {
-//     console.log(a);
-//     if(a){
-//         let space = document.querySelector('.space')
+isRunning('Calculator.exe').then((a) => {
+    console.log(a);
+    // if(a){
+    //     let space = document.querySelector('.space')
 
-//         space.innerHTML = test.developer;
-//     }else{
-//       console.log('Калькулятор закрыт!')
-//     }
-//   })
+    //     space.innerHTML = test.developer;
+    // }else{
+    //   console.log('Калькулятор закрыт!')
+    // }
+  })
 
