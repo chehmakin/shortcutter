@@ -4,13 +4,14 @@
   "description": "Виртуальная клавиатура",
   "main": "main.js",
   "dependencies": {
+    "child_process": "^1.0.2",
     "current-processes": "^0.2.1",
-    "electron-hotkey": "^0.0.1-alpha.1",
     "electron": "^11.2.0",
+    "electron-hotkey": "^0.0.1-alpha.1",
     "electron-packager": "^15.2.0",
     "gkm": "^0.2.0",
-    "node-abi": "^2.19.3",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "node-abi": "^2.19.3"
   },
   "devDependencies": {},
   "scripts": {
