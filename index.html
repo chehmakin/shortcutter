@@ -1,432 +1,812 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-</head>
-
-<body>
+  <body>
     <div id="main">
-        <div class="line">
-            <div class="keys esc">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">esc</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F1</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F2</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F3</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F4</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F5</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F6</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F7</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F8</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F9</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F10</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F11</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F12</div>
-            </div>
-            <div class="keys del">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">del</div>
-            </div>
+      <div class="line">
+        <div class="keys esc">
+          <div class="r">esc</div>
         </div>
-
-        <div class="line sec_line">
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">`</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">1</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">2</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">3</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">4</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">5</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">6</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">7</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">8</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">9</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">0</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">-</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">=</div>
-            </div>
-            <div class="keys back">
-                <div class="r">backspace</div>
-            </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F1</div>
         </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F2</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F3</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F4</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F5</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F6</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F7</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F8</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F9</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F10</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F11</div>
+        </div>
+        <div class="keys">
+          <!-- <div class="frame"></div> -->
+          <!-- <div class="letter"></div> -->
+          <div class="r">F12</div>
+        </div>
+        <div class="keys del">
+          <div class="r">del</div>
+        </div>
+      </div>
 
-        <div class="line sec_line">
-            <div class="keys tab">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">tab</div>
-            </div>
-            <div class="keys">
-                <!-- <div class="top_in_keys"> -->
-                <div class="r">Q</div>
-                <!-- <div class="frame">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="line sec_line">
+        <div class="keys">
+          <!-- <div class="frame"></div>
+          <div class="letter"></div> -->
+          <div class="r">`</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">1</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 17px">Opacity<br />10%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">2</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">20%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">3</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">30%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">4</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">40%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">5</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">50%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">6</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">60%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">7</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">70%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">8</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">80%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">9</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">90%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">0</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">100%</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">-</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">Zoom Out</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">=</div>
+            <div class="frame"></div>
+          </div>
+          <div class="letter" style="margin-top: 28px">Zoom In</div>
+        </div>
+        <div class="keys back">
+          <div class="r">backspace</div>
+        </div>
+      </div>
+
+      <div class="line sec_line">
+        <div class="keys tab">
+          <div class="r">tab</div>
+        </div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">Q</div>
+            <div class="frame">
+              <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
-                        </svg>
-                        
-                </div> -->
-                <!-- </div>
-                <div class="letter">Paste <br> Over
-                    Selection</div>
-                </div> -->
+                        </svg> -->
             </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">W</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">E</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">R</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">T</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">Y</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">U</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">I</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">O</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">P</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">[</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">]</div>
-            </div>
-            <div class="keys sl">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">\</div>
-            </div>
+          </div>
+          <div class="letter"></div>
         </div>
 
-        <div class="line sec_line">
-            <div class="keys caps">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">caps lock</div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">W</div>
+            <div class="frame">
+              <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                          </svg> -->
             </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">A</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">S</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">D</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">F</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">G</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">H</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">J</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">K</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">L</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">;</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">'</div>
-            </div>
-            <div class="keys enter">
-                <div class="r">enter</div>
-            </div>
-
+          </div>
+          <div class="letter"></div>
         </div>
-
-        <div class="line sec_line">
-            <div class="keys shift">
-                <div class="r">shift</div>
-                
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">E</div>
+            <div class="frame">
+              <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                          </svg> -->
             </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">Z</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">X</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">C</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">V</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">B</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">N</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">M</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">,</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">.</div>
-            </div>
-            <div class="keys">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">/</div>
-            </div>
-            <div class="keys shift shift_l">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r" style="font-size: 16px;">shift</div>
-            </div>
+          </div>
+          <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+            <div style="margin-top: 28px">Flatten</div>
+          </div>
         </div>
-
-        <div class="line sec_line">
-            <div class="keys ctrl">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">ctrl</div>
+        <div class="keys">
+          <div class="top_in_keys">
+            <div class="r">R</div>
+            <div class="frame">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 0H16V16H0V0ZM1 1H15V15H1V1Z"
+                  fill="white"
+                />
+              </svg>
             </div>
-            <div class="keys fn">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">fn</div>
-            </div>
-
-            <div class="keys win">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">win</div>
-            </div>
-            <div class="keys alt"  style="padding: 5px;">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r" style="margin-left: 0;">alt</div>
-            </div>
-            <div class="keys space">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">space</div>
-            </div>
-            <div class="keys alt_gr alt" style="padding: 5px;">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r" style="margin-left: 0;">alt gr</div>
-            </div>
-            <div class="keys ctrl">
-                <div class="frame"></div>
-                <div class="letter"></div>
-                <div class="r">ctrl</div>
-            </div>
-            <div class="container">
-                <div class="keys left"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M-1.32533e-07 3.968L6.8965 0.937822L6.8965 7L-1.32533e-07 3.968Z" fill="white"/>
+          </div>
+          <div class="letter">
+            <div style="margin-top: 28px">Rectangle</div>
+          </div>
+        </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">T</div>
+              <div class="frame">
+                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 4H1V1H6V15H3V16H10V15H7V1H12V4H13V0H0V4Z" fill="white"/>
                     </svg>
-                    </div>
-                <div class="center" style="width: 70px; margin-right: 2px;">
-                    <div class="keys up"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2" d="M3.032 0L6.06218 6.8965L0 6.8965L3.032 0Z" fill="white"/>
-                        </svg>
-                        </div>
-                    <div class="keys down"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.2" d="M3.032 6.89648L6.06218 -1.33514e-05L0 -1.33514e-05L3.032 6.89648Z" fill="white"/>
-                        </svg>
-                        </div>
-                </div>
-                <div class="keys right"><svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M7 3.968L0.103503 0.937822L0.103502 7L7 3.968Z" fill="white"/>
-                    </svg>
-                    </div>
+                    
+              </div>
             </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Text</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">Y</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Outlines</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">U</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Underline</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">I</div>
+              <div class="frame">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0264 4.55987L8.71446 3.24789C8.53331 3.06675 8.23962 3.06675 8.05847 3.24789C7.87733 3.42904 7.87733 3.72273 8.05847 3.90388L9.37045 5.21586L1.27994 13.3064C0.374208 14.2121 0.374208 15.6806 1.27994 16.5863C2.18567 17.492 3.65415 17.492 4.55987 16.5863L12.6504 8.49579L13.9624 9.80777C14.1435 9.98891 14.4372 9.98891 14.6183 9.80777C14.7995 9.62662 14.7995 9.33293 14.6183 9.15178L13.3064 7.83981L16.5863 4.55987C17.492 3.65414 17.492 2.18566 16.5863 1.27993C15.6806 0.374201 14.2121 0.3742 13.3064 1.27993L10.0264 4.55987ZM10.0264 5.87184L1.93592 13.9624C1.39249 14.5058 1.39249 15.3869 1.93592 15.9303C2.47936 16.4738 3.36045 16.4738 3.90389 15.9303L11.9944 7.83981L10.0264 5.87184ZM12.6504 7.18382L10.6824 5.21586L13.9624 1.93592C14.5058 1.39248 15.3869 1.39248 15.9303 1.93592C16.4738 2.47936 16.4738 3.36044 15.9303 3.90388L12.6504 7.18382Z" fill="white"/>
+                    <path d="M10.6824 5.21586L12.6504 7.18382L15.9303 3.90388C16.4738 3.36044 16.4738 2.47936 15.9303 1.93592C15.3869 1.39248 14.5058 1.39248 13.9624 1.93592L10.6824 5.21586Z" fill="white"/>
+                    </svg>
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Pick Color</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">O</div>
+              <div class="frame">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0C3.582 0 0 3.582 0 8C0 12.418 3.582 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM15 8C15 11.866 11.866 15 8 15C4.134 15 1 11.866 1 8C1 4.134 4.134 1 8 1C11.866 1 15 4.134 15 8Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Ellipse</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">P</div>
+              <div class="frame">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.444 1.737L9.11 3.637L9.122 3.641L9.133 3.644C11.072 4.146 12.5 5.907 12.5 8C12.503 8.503 12.437 8.912 12.289 9.367L12.104 9.947L12.534 10.377L14.399 12.243L12.279 14.364L10.431 12.517L9.996 12.082L9.411 12.275C8.942 12.432 8.52 12.503 8 12.5C5.829 12.5 4.015 10.961 3.593 8.914L3.585 8.877L3.575 8.84L1.743 2.45L6.646 7.353C6.552 7.55 6.5 7.768 6.5 8C6.5 8.828 7.172 9.5 8 9.5C8.828 9.5 9.5 8.828 9.5 8C9.5 7.172 8.828 6.5 8 6.5C7.768 6.5 7.55 6.552 7.353 6.646L2.443 1.736L2.444 1.737ZM12.278 15.778L15.814 12.243L13.242 9.671C13.409 9.144 13.5 8.582 13.5 8C13.5 5.44 11.752 3.29 9.385 2.676L0 0L2.613 9.116C3.13 11.618 5.345 13.5 8 13.5C8.602 13.5 9.182 13.403 9.724 13.224L12.278 15.778Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Pen</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">[</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 17px">Send Backward</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">]</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 17px">Send Forward</div>
+            </div>
+          </div>
+          <div class="keys sl">
+            <div class="top_in_keys">
+              <div class="r">\</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Hide UI</div>
+            </div>
+          </div>
 
+      <div class="line sec_line">
+        <div class="keys caps">
+
+          <div class="r">caps lock</div>
         </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">A</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Select All</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">S</div>
+              <div class="frame">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.854 7.354L0.854 15.354L0 16.207H9.707V11.914L18.561 3.061L18.914 2.707L18.561 2.354L16.561 0.354L16.207 0L15.854 0.354L8.854 7.354ZM9.707 7.914L16.207 1.414L17.5 2.707L9.707 10.5V7.914ZM2.414 15.207L8.707 8.914V15.207H2.414Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Slice</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">D</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color:rgba(10, 207, 132, 0.5);">
+              <div style="margin-top: 28px" class="alt_s">Align Right</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">F</div>
+              <div class="frame">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Frame</div>
+            </div>
+          </div>
+          
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">G</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Group</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">H</div>
+              <div class="frame">
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41178 0.888572C8.99255 0.888572 9.26143 1.45015 9.26579 1.95139L9.5328 7.6642C9.52321 8.02123 9.79022 8.21449 10.044 8.21449C10.2414 8.21449 10.4307 8.09764 10.4758 7.85C10.5562 7.40767 11.3565 4.12591 11.5077 3.3365C11.5772 2.97316 11.7794 2.307 12.5367 2.30709C12.5822 2.30709 12.6297 2.30949 12.6792 2.31446C13.3656 2.38386 13.4392 3.20135 13.3656 3.65301C13.1011 5.27474 12.4624 8.2192 12.3993 8.55997C12.3535 8.80735 12.645 8.96489 12.8839 8.96489C13.0058 8.96489 13.1139 8.92384 13.1566 8.83276C13.2772 8.57525 13.9678 7.18686 14.4635 6.29153C14.7016 5.86129 14.9891 5.62235 15.3369 5.62235C15.4386 5.62235 15.5456 5.64279 15.6579 5.68499C16.134 5.86351 16.1884 6.60662 16.0338 6.9951L12.9538 16.1126C12.8952 16.2858 12.7327 16.4024 12.5499 16.4024C12.5498 16.4024 12.5496 16.4024 12.5494 16.4024L6.52401 16.3952C6.3016 16.395 6.09029 16.298 5.9451 16.1295L1.03307 10.4321C0.815818 10.175 0.847895 9.79037 1.10505 9.57303C1.10505 9.57303 1.41329 9.31508 1.87651 9.31517C1.97585 9.31517 2.08239 9.32707 2.19453 9.35586C2.85225 9.52505 4.07306 10.7184 4.57128 11.1226C4.66858 11.2016 4.7912 11.2366 4.91756 11.2366C5.28774 11.2366 5.69061 10.936 5.58638 10.5586C5.44555 10.0482 3.63739 5.99671 2.81155 4.18828C2.68351 3.90785 2.47034 2.93646 3.23753 2.61382C3.37117 2.55758 3.49282 2.53332 3.60354 2.53332C4.2043 2.53332 4.48198 3.25084 4.59847 3.48676C4.59847 3.48676 6.31199 7.27803 6.72785 8.00897C6.81608 8.17344 6.94199 8.2439 7.06195 8.2439C7.25219 8.2439 7.42733 8.06646 7.41222 7.80557C7.38397 7.3181 7.3502 3.58326 7.39019 1.94535C7.40307 1.4234 7.72296 0.898346 8.39898 0.88875C8.40316 0.888661 8.40751 0.888572 8.41178 0.888572ZM8.41178 0L8.38637 0.000177617C7.32132 0.0153722 6.52881 0.82415 6.50179 1.9234C6.48082 2.78301 6.47967 4.22285 6.48784 5.47627C6.0711 4.57961 5.64005 3.63382 5.40814 3.12075C5.40396 3.11151 5.39961 3.10236 5.39508 3.09321C5.3869 3.07668 5.37775 3.05704 5.36753 3.03509C5.20616 2.69122 4.71505 1.64484 3.60354 1.64475C3.36886 1.64475 3.12984 1.69522 2.89303 1.79474C2.44022 1.98516 2.10789 2.32379 1.93222 2.77394C1.66174 3.46676 1.84958 4.22098 2.00322 4.5574C2.71381 6.1132 3.71319 8.35755 4.28667 9.70081C3.59127 9.10662 2.9643 8.63639 2.41569 8.49528C2.23842 8.4497 2.05698 8.42659 1.87633 8.42659C1.12824 8.42659 0.62744 8.81392 0.534584 8.89158C0.225539 9.15273 0.038761 9.51465 0.00535069 9.91362C-0.0280596 10.3123 0.0958073 10.7002 0.354115 11.0058C0.355981 11.008 0.357847 11.0102 0.359802 11.0124L5.27183 16.7099C5.58567 17.0741 6.0416 17.2833 6.52267 17.2839L12.5481 17.2911C13.1141 17.2911 13.6146 16.9318 13.7954 16.3971L16.8692 7.29802C17.0578 6.80157 17.0416 6.17193 16.8262 5.68535C16.6513 5.2902 16.3471 4.99466 15.9696 4.85311C15.7588 4.77403 15.5458 4.73396 15.3366 4.73396C14.9406 4.73396 14.403 4.87373 13.9345 5.47991C14.0531 4.87213 14.1635 4.27856 14.2422 3.79607C14.2825 3.54913 14.3752 2.69246 13.876 2.04149C13.6046 1.68758 13.2215 1.47627 12.7684 1.43042C12.6901 1.42251 12.6121 1.41852 12.5364 1.41852C11.5556 1.41852 10.8447 2.07304 10.6347 3.16936C10.5823 3.44331 10.4435 4.05056 10.285 4.73058L10.1538 1.925C10.1363 0.826283 9.3901 0 8.41178 0Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Hand</div>
+            </div>
+          </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">J</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 17px">Join <br> Vectors</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">K</div>
+              <div class="frame">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H5V1H1V15H15V11H16V16H0V0ZM5 11V5H6V9.293L14.293 1H10V0H16V6H15V1.707L6.707 10H11V11H5Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Scale</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">L</div>
+              <div class="frame">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.708 16.707L16.708 0.707L16 0L0 16L0.708 16.707Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Line</div>
+            </div>
+          </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">;</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <!-- <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Select All</div>
+            </div> -->
+          </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">'</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: rgba(25, 189, 254, 0.5)">
+              <div style="margin-top: 28px">Pixel Grid</div>
+            </div>
+          </div>
+        <div class="keys enter">
+          <div class="r">enter</div>
+        </div>
+      </div>
+
+      <div class="line sec_line">
+        <div class="keys shift">
+          <div class="r">shift</div>
+        </div>
+        <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">Z</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" style="color: #fff">
+              <div style="margin-top: 28px">Zoom+</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">X</div>
+              <div class="frame">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16V13H0V12H3V4H0V3H3V0H4V3H12V0H13V3H16V4H13V12H16V13H13V16H12V13H4V16H3ZM12 12V4H4V12H12Z" fill="white"/>
+                            </svg> -->
+              </div>
+            </div>
+            <div class="letter" >
+              <div style="margin-top: 28px; color: rgba(237, 78, 45, 0.5);" class="shift_s">Remove Fill</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">C</div>
+              <div class="frame">
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.944 14.75L3.64 11.992L3.927 11.527L3.69 11.034C3.225 10.083 2.993 9.124 3 8C3 4.134 6.134 1 10 1C13.866 1 17 4.134 17 8C17 11.866 13.866 15 10 15C8.86 15.007 7.888 14.768 6.926 14.291L6.658 14.16L6.362 14.197L1.944 14.749V14.75ZM6.487 15.19C7.547 15.708 8.74 16 10 16C14.418 16 18 12.418 18 8C18 3.582 14.418 0 10 0C5.582 0 2 3.582 2 8C2 9.243 2.283 10.419 2.789 11.468L0.672 14.908L0 16L1.272 15.841L6.487 15.189V15.19Z" fill="white"/>
+                    </svg>
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Comment</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">V</div>
+              <div class="frame">
+                <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.206 7.379L0.98 0.592L0 0L0.231 1.121L2.914 14.121L3.157 15.299L3.821 14.296L6.859 9.706L12.079 8.289L13.206 7.983L12.206 7.379ZM1.442 2.04L10.689 7.63L6.415 8.79L6.233 8.84L6.129 8.996L3.65 12.742L1.442 2.04Z" fill="white"/>
+                    </svg>
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Move</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">B</div>
+              <div class="frame">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg>
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 17px">Paint<br>Bucket</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">N</div>
+              <div class="frame">
+                <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg> -->
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 28px">Next Frame</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">M</div>
+              <div class="frame">
+                <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg> -->
+                    
+                    
+                    
+              </div>
+            </div>
+            <!-- <div class="letter">
+              <div style="margin-top: 28px">Next Frame</div>
+            </div> -->
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">,</div>
+              <div class="frame">
+                <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg> -->
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 17px; color: rgba(10, 207, 132, 0.5)" class="alt_s">Letter <br> Spacing-</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">.</div>
+              <div class="frame">
+                <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg> -->
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 17px; color: rgba(10, 207, 132, 0.5)" class="alt_s">Letter <br> Spacing+</div>
+            </div>
+          </div>
+          <div class="keys">
+            <div class="top_in_keys">
+              <div class="r">/</div>
+              <div class="frame">
+                <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.485 16.971L0 8.485L8.485 0L16.971 8.485L8.485 16.971ZM8.485 1.414L15.557 8.485H1.414L8.485 1.415V1.414Z" fill="white"/>
+                    </svg> -->
+                    
+                    
+                    
+              </div>
+            </div>
+            <div class="letter">
+              <div style="margin-top: 17px;">Remove <br> Stroke</div>
+            </div>
+          </div>
+        <div class="keys shift_l">
+          
+          <div class="r" style="font-size: 16px">shift</div>
+        </div>
+      </div>
+
+      <div class="line sec_line">
+        <div class="keys ctrl">
+          <div class="r">ctrl</div>
+        </div>
+        <div class="keys fn">
+          
+          <div class="r">fn</div>
+        </div>
+
+        <div class="keys win">
+          
+          <div class="r">win</div>
+        </div>
+        <div class="keys alt" style="padding: 5px">
+         
+          <div class="r" style="margin-left: 0">alt</div>
+        </div>
+        <div class="keys space">
+          <div class="r">space</div>
+        </div>
+        <div class="keys alt_gr" style="padding: 5px">
+          <div class="r" style="margin-left: 0">alt gr</div>
+        </div>
+        <div class="keys ctrl_l">
+          <div class="r" style="margin-left: 10px">ctrl</div>
+        </div>
+        <div class="container">
+          <div class="keys left">
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.2"
+                d="M-1.32533e-07 3.968L6.8965 0.937822L6.8965 7L-1.32533e-07 3.968Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="center" style="width: 70px; margin-right: 2px">
+            <div class="keys up">
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M3.032 0L6.06218 6.8965L0 6.8965L3.032 0Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="keys down">
+              <svg
+                width="7"
+                height="7"
+                viewBox="0 0 7 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M3.032 6.89648L6.06218 -1.33514e-05L0 -1.33514e-05L3.032 6.89648Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="keys right">
+            <svg
+              width="7"
+              height="7"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.2"
+                d="M7 3.968L0.103503 0.937822L0.103502 7L7 3.968Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

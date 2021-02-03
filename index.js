@@ -1,17 +1,55 @@
-// // let shift = document.el
-// document.addEventListener('keydown', (event) => {
-//     if (event.keyCode == 16) {
-//         shift.style.width = '168px';
-//         shift.style.height = '60px';
-//     }
-// })
 
-// document.addEventListener('keyup', (event) => {
-//     if (event.keyCode == 16) {
-//         shift.style.width = '42px';
-//         shift.style.height = '24px';
-//     }
-// })
+let shift = document.querySelector('.shift')
+let ctrl = document.querySelector('.ctrl')
+let alt = document.querySelector('.alt')
+let alt_s = document.querySelectorAll('.alt_s')
+let shift_s = document.querySelectorAll('.shift_s')
+
+console.log(shift_s.length)
+
+document.addEventListener('keydown', (event) => {
+    if(event.keyCode == 16){
+        shift.classList.add('shift_anim')
+        for(var i = 0; i < shift_s.length; i++) {
+        shift_s[i].style.color = 'rgba(237, 78, 45, 1)'
+        }
+    }
+
+    if(event.keyCode == 17){
+    ctrl.classList.add('ctrl_anim')
+    }
+
+    if(event.keyCode == 18){
+        alt.classList.add('alt_anim')
+        for(var i = 0; i < alt_s.length; i++) {
+            alt_s[i].style.color = 'rgba(10, 207, 132, 1)'
+        }
+        
+        }
+
+})
+
+document.addEventListener('keyup', (event) => {
+    if(event.keyCode == 16){
+        shift.classList.remove('shift_anim')
+        for(var i = 0; i < shift_s.length; i++) {
+        shift_s[0].style.color = 'rgba(237, 78, 45, 0.5)'
+        }
+    }
+
+    if(event.keyCode == 17){
+        ctrl.classList.remove('ctrl_anim')
+    }
+
+    if(event.keyCode == 18){
+        alt.classList.remove('alt_anim')
+        for(var i = 0; i < alt_s.length; i++) {
+            alt_s[i].style.color = 'rgba(10, 207, 132, 0.5)'
+        }
+    }
+})
+
+
 
 const exec = require('child_process').exec
 
