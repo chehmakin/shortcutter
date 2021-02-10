@@ -12,9 +12,8 @@
     opacity    : 1 !important;
     user-select: none;
     font-family: 'PT_Regular';
-    font-style : normal;
-    font-weight: normal;
     font-weight: 400;
+
 }
 
 
@@ -22,12 +21,13 @@
 #main {
     width           : 1090px;
     height          : 412px;
-    background-color: #555555;
+    background: #555555;
+    
+    backdrop-filter: blur(30px) !important;
     border-radius   : 10px !important;
-    /* filter       : blur(0.3px);  */
-    backdrop-filter : blur(30px) !important;
+    
     padding         : 6px 4px;
-    opacity         : 0.5;
+   
 }
 
 .line::after {
@@ -37,14 +37,19 @@
 }
 
 .keys {
+    --smooth-corners: 25.0;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+
     float        : left;
     width        : 70px;
     height       : 40px;
-    background   : rgba(0, 0, 0, 0.7) !important;
+    
     border-radius: 6px;
     margin-left  : 2px;
-    box-shadow   : inset 0px 3px 10px rgba(0, 0, 0, 0.2);
-    /* padding   : 5px; */
+    background: rgb(0, 0, 0);
+    opacity: 0.7 !important;
+box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -147,8 +152,7 @@
     position: static;
     width   : 67px;
     height  : 22px;
-    left    : 5px;
-    top     : 0px;
+    
 }
 
 .sec_line .enter .r {
@@ -175,13 +179,28 @@
     padding      : 0px 5px 2px;
     opacity      : 1 !important;
     color        : #000;
-    border-radius: 3px;
+    /* border-radius: 3px; */
 }
+
+.shift .r, .alt .r, .ctrl .r, .shift::before, .alt::before, .ctrl::before{
+    --smooth-corners: 10.0;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+}
+
+
+
+.shift::before, .alt::before{
+    --smooth-corners: 35.0;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
+}
+
 
 .shift .r {
     position   : absolute;
-    margin-left: 1px !important;
-    margin-top : 40px !important;
+    /* margin-left: 1px !important; */
+    margin-top : 41px !important;
 
 }
 
@@ -191,8 +210,8 @@
     /* z-index   : 1;*/
     position     : relative;
     margin-left  : 0px !important;
-    margin-left  : 1px !important;
-    margin-top   : 40px !important;
+    /* margin-left  : 1px !important; */
+    margin-top   : 41px !important;
     background   : #00C1FF !important;
     border-radius: 3px;
 }
@@ -272,11 +291,17 @@
     display   : flex;
 }
 
+.left, .right, .up, .down{
+    background: rgb(0, 0, 0);
+    opacity: 0.7 !important;
+box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 .left,
 .right {
     width           : 70px;
     height          : 70px;
-    background-color: #363636;
+    
     border-radius   : 6px;
 }
 
@@ -285,13 +310,12 @@
     width           : 70px;
     height          : 34px !important;
     /* margin       : 0px 5px 4px 5px; */
-    background-color: #363636;
+    
     border-radius   : 6px;
 }
 
-.left svg,
-.right svg {
-    opacity    : 0.2 !important;
+.left svg{
+    
     margin-left: 6px !important;
     margin-top : 7px !important;
     
@@ -323,17 +347,17 @@
     border-radius     : 3px;
     position          : absolute;
     left              : 5px;
-    bottom            : 6px;
+    bottom            : 5px;
     width             : 42px;
     height            : 24px;
     margin-top        : 40px;
-    transition        : width 0.2s ease, height 0.2s ease;
-    margin-left       : 1px;
+    transition        : width 0.2s linear, height 0.2s linear;
+    /* margin-left       : 1px; */
 }
 
 .shift_anim::before {
-    width : calc(100% - 12px);
-    height: calc(100% - 12px);
+    width : 168px;
+    height: 60px;
 }
 
 .ctrl::before {
@@ -343,17 +367,20 @@
     border-radius     : 3px;
     position          : absolute;
     /* left           : 5px; */
-    bottom            : 12px;
+    bottom            : 11px;
     width             : 34px;
     height            : 24px;
-    transition        : width 0.2s ease, height 0.2s ease;
-    margin-left       : 6px;
+    transition        : width 0.2s linear, height 0.2s linear;
+    margin-left       : 5px;
+    --smooth-corners: 20.0;
+    mask-image: paint(smooth-corners);
+    -webkit-mask-image: paint(smooth-corners);
 
 }
 
 .ctrl_anim::before {
-    width : 58px;
-    height: 58px;
+    width : 60px;
+    height: 60px;
 }
 
 .alt::before {
@@ -367,7 +394,7 @@
     width             : 28px;
     height            : 24px;
 
-    transition    : width 0.2s ease, height 0.2s ease;
+    transition    : width 0.2s linear, height 0.2s linear;
     /* margin-left: 5px; */
 
 }

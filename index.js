@@ -4,6 +4,7 @@ let ctrl = document.querySelector('.ctrl')
 let alt = document.querySelector('.alt')
 let alt_s = document.querySelectorAll('.alt_s')
 let shift_s = document.querySelectorAll('.shift_s')
+let ctrl_s = document.querySelectorAll('.ctrl_s')
 
 console.log(shift_s.length)
 
@@ -13,10 +14,19 @@ document.addEventListener('keydown', (event) => {
         for(var i = 0; i < shift_s.length; i++) {
         shift_s[i].style.color = 'rgba(237, 78, 45, 1)'
         }
+
+
+
+        
     }
 
     if(event.keyCode == 17){
     ctrl.classList.add('ctrl_anim')
+    for(var i = 0; i < ctrl_s.length; i++) {
+        ctrl_s[i].style.color = 'rgba(25, 189, 254, 1)'
+        }
+
+
     }
 
     if(event.keyCode == 18){
@@ -24,6 +34,8 @@ document.addEventListener('keydown', (event) => {
         for(var i = 0; i < alt_s.length; i++) {
             alt_s[i].style.color = 'rgba(10, 207, 132, 1)'
         }
+
+
         
         }
 
@@ -35,10 +47,17 @@ document.addEventListener('keyup', (event) => {
         for(var i = 0; i < shift_s.length; i++) {
         shift_s[0].style.color = 'rgba(237, 78, 45, 0.5)'
         }
+
+        
     }
 
     if(event.keyCode == 17){
         ctrl.classList.remove('ctrl_anim')
+        for(var i = 0; i < ctrl_s.length; i++) {
+            ctrl_s[i].style.color = 'rgba(25, 189, 254, 0.5)'
+            }
+            
+
     }
 
     if(event.keyCode == 18){
@@ -46,6 +65,8 @@ document.addEventListener('keyup', (event) => {
         for(var i = 0; i < alt_s.length; i++) {
             alt_s[i].style.color = 'rgba(10, 207, 132, 0.5)'
         }
+
+        
     }
 })
 
