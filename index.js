@@ -17,7 +17,7 @@ document.addEventListener('keydown', (event) => {
 
 
 
-        
+
     }
 
     if(event.keyCode == 17){
@@ -36,7 +36,7 @@ document.addEventListener('keydown', (event) => {
         }
 
 
-        
+
         }
 
 })
@@ -48,7 +48,7 @@ document.addEventListener('keyup', (event) => {
         shift_s[0].style.color = 'rgba(237, 78, 45, 0.5)'
         }
 
-        
+
     }
 
     if(event.keyCode == 17){
@@ -56,7 +56,7 @@ document.addEventListener('keyup', (event) => {
         for(var i = 0; i < ctrl_s.length; i++) {
             ctrl_s[i].style.color = 'rgba(25, 189, 254, 0.5)'
             }
-            
+
 
     }
 
@@ -66,7 +66,7 @@ document.addEventListener('keyup', (event) => {
             alt_s[i].style.color = 'rgba(10, 207, 132, 0.5)'
         }
 
-        
+
     }
 })
 
@@ -77,19 +77,19 @@ const exec = require('child_process').exec
 function isRunning(win, mac){
     return new Promise(function(resolve, reject){
         const plat = process.platform
-        const cmd = plat == 'win32' ? 'tasklist' : (plat == 'darwin' ? 'ps -ax | grep ' + mac : (plat == 'linux' ? 'ps -A' : ''))
+        const cmd = plat == 'win32' ? 'tasklist' : (plat == 'darwin' ? 'top ' + mac : (plat == 'linux' ? 'ps -A' : ''))
         const proc = plat == 'win32' ? win : (plat == 'darwin' ? mac : (plat == 'linux' ? linux : ''))
         if(cmd === '' || proc === ''){
             resolve(false)
         }
 
         exec(cmd, function(err, stdout, stderr) {
-            resolve(stdout.toLowerCase().indexOf(proc.toLowerCase()) > -1)
+            resolve(stdout.indexOf(proc) > -1)
         })
     })
 }
 
-isRunning('Calculator.exe').then((a) => {
+isRunning('Calculator.exe','dworker').then((a) => {
     console.log(a);
     // if(a){
     //     let space = document.querySelector('.space')
@@ -99,4 +99,3 @@ isRunning('Calculator.exe').then((a) => {
     //   console.log('Калькулятор закрыт!')
     // }
   })
-
