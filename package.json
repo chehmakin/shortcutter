@@ -12,6 +12,7 @@
     "gkm": "^0.2.0",
     "mysql": "^2.18.1",
     "node-abi": "^2.19.3",
+    "node-gyp": "^5.1.0",
     "smooth-corners": "^1.0.6"
   },
   "devDependencies": {},

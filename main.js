@@ -11,7 +11,8 @@ function createWindow() {
         y: 280,
 
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            experimentalFeatures: true
         }
     })
 
