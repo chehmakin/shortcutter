@@ -3,7 +3,7 @@ const { app, BrowserWindow, globalShortcut, Tray, Menu } = require('electron')
 function createWindow() {
     const win = new BrowserWindow({
         width: 1095,
-        height: 422,
+        height: 412,
         resizable: false,
         transparent: true,
         frame: false,
@@ -15,6 +15,7 @@ function createWindow() {
             experimentalFeatures: true
         }
     })
+
 
     win.loadFile('index.html')
     win.on('close', (ev) => {

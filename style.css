@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'PT_Regular';
     /* Гарнитура шрифта */
-    src        : url("./font/PT/PT/PT-Root-UI/PT-Root-UI_Regular.ttf");
+    src        : url("./font/PT/PT/PT-Root-UI/PT-Root-UI_Light.ttf");
     /* Путь к файлу со шрифтом */
 }
 
@@ -45,14 +45,14 @@ body{
     --smooth-corners: 25.0;
     mask-image: paint(smooth-corners);
     -webkit-mask-image: paint(smooth-corners);
-
+    opacity: 0.9 !important;
     float        : left;
     width        : 70px;
     height       : 40px;
 
     border-radius: 6px;
     margin-left  : 2px;
-    background: #00000090;
+    background: #000000;
 
 box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
 
@@ -188,7 +188,7 @@ letter-spacing: -0.41px;
 .sec_line .shift .r,
 .sec_line .alt .r,
 .sec_line .ctrl .r {
-    margin-top   : 35px;
+    /* margin-top   : 33px; */
     margin-left  : 0px;
     background   : #ED4E2D;
     width        : 42px;
@@ -300,7 +300,7 @@ margin-left: 10px;
 
 .sec_line .fn .r,
 .sec_line .win .r {
-    margin-top : 40px;
+    margin-top : 41px;
     margin-left: 10px;
 }
 
@@ -314,7 +314,8 @@ margin-left: 10px;
 }
 
 .left, .right, .up, .down{
-    background: #00000090;
+    background: #000000;
+    opacity: 0.9;
 box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.2);
 color: #fff;
 font-size: 11px;
@@ -374,12 +375,13 @@ font-weight: lighter;
     /* background-size: 25px 25px; */
     border-radius     : 3px;
     position          : absolute;
-    /* left           : 5px; */
-    bottom            : 21px;
+    left           : 5px;
+    bottom            : 11px;
+    /* margin-top: 20px; */
     width             : 34px;
     height            : 22px;
     transition    : width 100ms, height 100ms;
-    margin-left       : 5px;
+    margin-left       : 6px;
     --smooth-corners: 20.0;
     mask-image: paint(smooth-corners);
     -webkit-mask-image: paint(smooth-corners);
@@ -398,7 +400,7 @@ font-weight: lighter;
     border-radius     : 3px;
     position          : absolute;
     /* left           : 5px; */
-    bottom            : 21px;
+    bottom: 11px;
     width             : 28px;
     height            : 22px;
 
